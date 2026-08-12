@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Farah Finances</title>
+<meta name="description" content="Get in touch with Farah Finances — Toronto, Ontario. Email narura.farah@gmail.com or call 416-909-9863." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">FF</span>
+      <span class="brand-text">Farah Finances<span>Chartered Accounting</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="meet-narura.html">Meet Narura</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="questionnaire.html">Get Started</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="questionnaire.html" class="btn desktop-only">Start Intake Form</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="meet-narura.html">Meet Narura</a>
+    <a href="services.html">Services</a>
+    <a href="questionnaire.html">Get Started</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="questionnaire.html" class="btn btn-primary">Start Intake Form</a>
+  </div>
+</header>
+
+<section class="page-hero ledger-texture">
+  <div class="container">
+    <span class="eyebrow" style="color: rgba(255,255,255,0.75)">Contact</span>
+    <h1>Let's talk about your business</h1>
+    <p>Have a quick question before filling out the intake form? Reach out directly — Narura responds personally.</p>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container grid-2">
+    <div class="reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="margin-top: 18px;">We'd love to hear from you</h2>
+      <p style="margin-top: 14px; color: var(--ink-soft);">For a full intake, we recommend starting with our questionnaire — but feel free to reach out directly with any questions first.</p>
+
+      <div style="margin-top: 12px;">
+        <div class="contact-card">
+          <div class="ico">@</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:narura.farah@gmail.com">narura.farah@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="ico">☎</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:14169099863">416-909-9863</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="ico">◎</div>
+          <div>
+            <h4>Location</h4>
+            <p>Toronto, Ontario, Canada</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px;">
+        <a href="questionnaire.html" class="btn btn-outline-dark">Prefer to start with the intake form? →</a>
+      </div>
+    </div>
+
+    <!--
+      SETUP NOTE FOR NARURA'S BROTHER:
+      Replace YOUR_FORM_ID below with the real Formspree form ID once created.
+    -->
+    <form
+      class="form-card reveal"
+      action="https://formspree.io/f/xbgryokj"
+      method="POST"
+      data-async-form
+      data-success-message="Thanks for reaching out — Narura will get back to you shortly."
+    >
+      <input type="hidden" name="_subject" value="New Message — Farah Finances Contact Form" />
+      <div class="field">
+        <label for="cname">Name</label>
+        <input type="text" id="cname" name="Name" required />
+      </div>
+      <div class="field">
+        <label for="cemail">Email</label>
+        <input type="email" id="cemail" name="Email" required />
+      </div>
+      <div class="field">
+        <label for="cphone">Phone <span class="hint">(optional)</span></label>
+        <input type="tel" id="cphone" name="Phone" />
+      </div>
+      <div class="field">
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="Message" required placeholder="How can we help?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+      <p class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">FF</span><span class="brand-text">Farah Finances<span>Chartered Accounting</span></span></a>
+        <p>Dependable, accurate, and practical accounting support for businesses in Toronto and beyond.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="about.html">About Us</a>
+        <a href="meet-narura.html">Meet Narura</a>
+        <a href="services.html">Services</a>
+        <a href="questionnaire.html">Intake Form</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:narura.farah@gmail.com">narura.farah@gmail.com</a>
+        <a href="tel:14169099863">416-909-9863</a>
+        <a href="contact.html">Toronto, Ontario, Canada</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Farah Finances. All rights reserved.</span>
+      <span>Toronto, Ontario</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

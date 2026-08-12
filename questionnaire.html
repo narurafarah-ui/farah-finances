@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Client Intake | Farah Finances</title>
+<meta name="description" content="Tell us about your business and accounting needs. Farah Finances will follow up after reviewing your intake form." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">FF</span>
+      <span class="brand-text">Farah Finances<span>Chartered Accounting</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="meet-narura.html">Meet Narura</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="questionnaire.html" aria-current="page">Get Started</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="questionnaire.html" class="btn desktop-only">Start Intake Form</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="meet-narura.html">Meet Narura</a>
+    <a href="services.html">Services</a>
+    <a href="questionnaire.html" aria-current="page">Get Started</a>
+    <a href="contact.html">Contact</a>
+    <a href="questionnaire.html" class="btn btn-primary">Start Intake Form</a>
+  </div>
+</header>
+
+<section class="page-hero ledger-texture">
+  <div class="container">
+    <span class="eyebrow" style="color: rgba(255,255,255,0.75)">New Client Intake</span>
+    <h1>Tell us about your business</h1>
+    <p>A few minutes now saves time later. Narura reviews every submission personally and will follow up by email or phone.</p>
+  </div>
+</section>
+
+<section class="bg-white section-tight">
+  <div class="container" style="max-width: 780px;">
+
+    <!--
+      SETUP NOTE FOR NARURA'S BROTHER:
+      Replace YOUR_FORM_ID below with the real Formspree form ID once created
+      (see the setup guide). Until then this form will not actually send email.
+    -->
+    <form
+      class="form-card reveal"
+      action="https://formspree.io/f/xbgryokj"
+      method="POST"
+      data-async-form
+      data-success-message="Thank you — your intake form has been sent to Narura. She'll be in touch soon."
+    >
+      <input type="hidden" name="_subject" value="New Client Intake — Farah Finances" />
+
+      <div class="form-section-title">Contact Information</div>
+      <div class="form-row">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="Full Name" required />
+        </div>
+        <div class="field">
+          <label for="businessName">Business Name <span class="hint">(if applicable)</span></label>
+          <input type="text" id="businessName" name="Business Name" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="Email" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="Phone" required />
+        </div>
+      </div>
+
+      <div class="form-section-title">About Your Business</div>
+      <div class="form-row">
+        <div class="field">
+          <label for="entityType">Business Structure</label>
+          <select id="entityType" name="Business Structure" required>
+            <option value="">Select one…</option>
+            <option>Sole Proprietorship</option>
+            <option>Partnership</option>
+            <option>Corporation</option>
+            <option>Non-Profit</option>
+            <option>Not Yet Registered</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="industry">Industry</label>
+          <input type="text" id="industry" name="Industry" placeholder="e.g. Retail, Construction, Consulting" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Approximate Annual Revenue</label>
+        <div class="radio-row">
+          <label class="radio-pill"><input type="radio" name="Annual Revenue" value="Under $250K" required /> Under $250K</label>
+          <label class="radio-pill"><input type="radio" name="Annual Revenue" value="$250K–$1M" /> $250K–$1M</label>
+          <label class="radio-pill"><input type="radio" name="Annual Revenue" value="$1M–$5M" /> $1M–$5M</label>
+          <label class="radio-pill"><input type="radio" name="Annual Revenue" value="Over $5M" /> Over $5M</label>
+        </div>
+      </div>
+
+      <div class="form-section-title">Accounting Needs</div>
+      <div class="field">
+        <label>Which services are you interested in? <span class="hint">(select all that apply)</span></label>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Monthly Close" /> Monthly Close</label>
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Year-End Close" /> Year-End Close</label>
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Financial Statements" /> Financial Statements</label>
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Accounting Oversight" /> Accounting Oversight</label>
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Ongoing Support" /> Ongoing Support</label>
+          <label class="check-item"><input type="checkbox" name="Services Interested In" value="Interim Leadership / Project" /> Interim Leadership / Project</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="software">Current Accounting Software</label>
+          <select id="software" name="Accounting Software">
+            <option value="">Select one…</option>
+            <option>QuickBooks Online</option>
+            <option>QuickBooks Desktop</option>
+            <option>Xero</option>
+            <option>Wave</option>
+            <option>Excel / Spreadsheets Only</option>
+            <option>None Yet</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="currentAccountant">Do You Currently Have an Accountant or Bookkeeper?</label>
+          <select id="currentAccountant" name="Currently Has Accountant">
+            <option value="">Select one…</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Not Currently, But Have in the Past</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="startDate">Preferred Start Date</label>
+          <input type="date" id="startDate" name="Preferred Start Date" />
+        </div>
+        <div class="field">
+          <label for="referral">How Did You Hear About Us?</label>
+          <input type="text" id="referral" name="Referral Source" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="notes">Anything Else We Should Know?</label>
+        <textarea id="notes" name="Additional Notes" placeholder="Tell us more about your business, timeline, or specific challenges you're facing."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 8px;">Submit Intake Form</button>
+      <p class="form-status"></p>
+      <p class="form-note">Your information is sent directly to Narura and is not shared with anyone else. She typically responds within 1–2 business days.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">FF</span><span class="brand-text">Farah Finances<span>Chartered Accounting</span></span></a>
+        <p>Dependable, accurate, and practical accounting support for businesses in Toronto and beyond.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="about.html">About Us</a>
+        <a href="meet-narura.html">Meet Narura</a>
+        <a href="services.html">Services</a>
+        <a href="questionnaire.html">Intake Form</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:narura.farah@gmail.com">narura.farah@gmail.com</a>
+        <a href="tel:14169099863">416-909-9863</a>
+        <a href="contact.html">Toronto, Ontario, Canada</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Farah Finances. All rights reserved.</span>
+      <span>Toronto, Ontario</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
